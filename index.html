@@ -1,0 +1,22 @@
+<script src="extensions/vue/vue.min.js"></script>
+<html>
+    <head>
+        <script src="extensions/jquery/jquery-3.6.0.min.js"></script>
+        <script>
+            $(function(){ $("head").load("templates/repetable/head.html") });
+        </script>
+    </head>
+<body>
+    <div id="example">Aktualizacja aplikacji</div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="button">Test</button>
+    <script>
+        new Vue({
+            el: '#example',
+            template: `
+              <p>{{ hello }}</p>
+            `,
+            data: {hello: 'Hello World!'}
+        })
+    </script>
+</body>
+</html>

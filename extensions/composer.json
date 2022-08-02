@@ -1,0 +1,15 @@
+{
+  "autoload": {
+    "psr-4": {
+      "class\\": "../class",
+      "models\\": "../models"
+    }
+  },
+  "require-dev": {
+    "twbs/bootstrap": "5.2.0",
+    "laravel/installer":  "4.*",
+    "phpunit/phpunit": "9.5.21",
+    "phpunit/php-code-coverage": "9.2.13",
+    "ext-xdebug": "*"
+  }
+}
