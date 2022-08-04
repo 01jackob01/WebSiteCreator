@@ -11,5 +11,14 @@
     "phpunit/phpunit": "9.5.21",
     "phpunit/php-code-coverage": "9.2.13",
     "ext-xdebug": "*"
+  },
+  "scripts": {
+    "post-install-cmd" : [
+      "cp -R vendor/twbs/bootstrap/dist bootstrap"
+    ],
+    "post-update-cmd": [
+      "rm -rf bootstrap",
+      "cp -R vendor/twbs/bootstrap/dist bootstrap"
+    ]
   }
 }
